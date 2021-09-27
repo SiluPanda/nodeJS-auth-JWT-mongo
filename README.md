@@ -29,5 +29,38 @@ Start server
 
 ### Register
 
+POST at `/auth/register`
+Payload:
+{
+    "username": <>,
+    "password": <>,
+    "email": <>
+}
+
+### Verify Email
+ 
+POST at `/auth/verify`
+Payload:
+{
+    "username": <>,
+    "password" <>,
+    "email": <>
+}
+
+### Login
+
+POST at `/auth/login`
+Payload:
+{
+    "email": <>,
+    "password": <>
+}
+
+Returns:
+{
+    "authToken": <>
+}
+
+
 
 
