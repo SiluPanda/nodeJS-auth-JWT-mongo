@@ -93,7 +93,7 @@ Headers:
 {
     ...,
     'Authorization': authToken
-} \
+}
 
 ### Delete user details:
 
@@ -102,7 +102,7 @@ Headers:
 {
     ...,
     'Authorization': authToken
-} \
+}
 
 
 
