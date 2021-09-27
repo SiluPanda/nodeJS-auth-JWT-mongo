@@ -6,15 +6,11 @@
 
 Create a file `.env` and add values for following parameters
 
-MONGO_URI=<>
-
-PASSWORD_ENCRYPTION_KEY=<>
-
-JWT_SEC=<>
-
-EMAIL=<>
-
-PASSWORD=<>
+MONGO_URI=<> \
+PASSWORD_ENCRYPTION_KEY=<> \
+JWT_SEC=<> \
+EMAIL=<> \
+PASSWORD=<> \
 
 Install node dependencies
 
@@ -39,17 +35,16 @@ Payload:
 
 ### Verify Email
  
-POST at `/auth/verify`
+POST at `/auth/verify` \
 Payload:
 {
-    "username": <>,
-    "password" <>,
+    "verificationCode: <>
     "email": <>
 }
 
 ### Login
 
-POST at `/auth/login`
+POST at `/auth/login` \
 Payload:
 {
     "email": <>,
@@ -60,6 +55,8 @@ Returns:
 {
     "authToken": <>
 }
+
+# 
 
 
 
