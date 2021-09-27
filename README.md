@@ -60,13 +60,11 @@ Returns:
 ### Change Username
  
 POST at `/auth/changeusername` \
-
 Headers: 
 {
     ...,
-    'Authorization': <authToken>
-} \
-
+    'Authorization': authToken
+} 
 Payload: 
 {
     "email": <>
@@ -76,18 +74,16 @@ Payload:
 ### Reset Password
 
 POST at `/auth/resetpassword` \
-
 Headers: 
 {
     ...,
-    'Authorization': <authToken>
+    'Authorization': authToken
 } \
-
 Payload: 
 {
     "email": <>
     "newPassword": <>
-    "newPasswordAgin": <>
+    "newPasswordAgain": <>
 } 
 
 ### Get user details
@@ -96,7 +92,7 @@ GET at `/user` \
 Headers: 
 {
     ...,
-    'Authorization': <authToken>
+    'Authorization': authToken
 } \
 
 ### Delete user details:
@@ -105,7 +101,7 @@ DELETE at `/user` \
 Headers: 
 {
     ...,
-    'Authorization': <authToken>
+    'Authorization': authToken
 } \
 
 
