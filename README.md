@@ -20,14 +20,15 @@ Start server
 
 `node app.js`
 
+A webserver will start on PORT 5000
 
 ## ENDPOINTS
 
 ### Register
 
-POST at `/auth/register`
+POST at `/auth/register` \
 Payload:
-{
+{ 
     "username": <>,
     "password": <>,
     "email": <>
@@ -56,7 +57,56 @@ Returns:
     "authToken": <>
 }
 
-# 
+### Change Username
+ 
+POST at `/auth/changeusername` \
+
+Headers: 
+{
+    ...,
+    'Authorization': <authToken>
+} \
+
+Payload: 
+{
+    "email": <>
+    "newUserName": <>
+} 
+
+### Reset Password
+
+POST at `/auth/resetpassword` \
+
+Headers: 
+{
+    ...,
+    'Authorization': <authToken>
+} \
+
+Payload: 
+{
+    "email": <>
+    "newPassword": <>
+    "newPasswordAgin": <>
+} 
+
+### Get user details
+
+GET at `/user` \
+Headers: 
+{
+    ...,
+    'Authorization': <authToken>
+} \
+
+### Delete user details:
+
+DELETE at `/user` \
+Headers: 
+{
+    ...,
+    'Authorization': <authToken>
+} \
 
 
 
